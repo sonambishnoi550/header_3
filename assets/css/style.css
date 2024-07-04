@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    list-style-type: none !important;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.py-67 {
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #1E0E62;
+    margin-right: 32px;
+    white-space: nowrap;
+}
+
+.gap-26 {
+    gap: 26px;
+}
+
+
+
+.link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    color: #A1A1B0;
+}
+
+.btn {
+    padding: 7px 18px;
+    text-align: center;
+    background-color: #25DAC5;
+    cursor: pointer;
+    border: 2px solid #25DAC5;
+    border-radius: 100px;
+    color: white;
+
+}
+
+.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.page {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: left;
+    color: #1E0E62;
+}
+
+input[placeholder="Your email"] {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    color: #A1A1B0;
+    border-radius: 100px;
+    border: 2px solid #EBEAED;
+    padding-left: 24px;
+    padding: 18px 24px;
+    margin-bottom: 30px;
+    width: 75%;
+
+}
+
+.pt-77 {
+    padding-top: 77px;
+}
+
+input[placeholder="Your password"] {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    color: #A1A1B0;
+    border-radius: 100px;
+    border: 2px solid #EBEAED;
+    padding-left: 24px;
+    width: 75%;
+    padding: 18px 24px;
+    padding-left: 24px;
+    margin-bottom: 30px;
+
+}
+
+.btn1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    background-color: #25DAC5;
+    border-radius: 100px;
+    border: 2px solid #25DAC5;
+    width: 75%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 17px;
+}
+
+.page1 {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #A1A1B0;
+}
+
+
+.position-relative {
+    position: relative;
+}
+
+
+
+.page2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #A1A1B0;
+    padding-top: 32px;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover ul.opstion {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown a svg {
+    transition: all 200ms linear;
+}
+
+.dropdown:hover a svg {
+    transform: rotate(180deg);
+}
+
+.opstion {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    transition: all 200ms linear;
+}
+
+.opstion li {
+    padding: 5px;
+}
+
+.opstion li:hover {
+    background-color: wheat;
+}
+
+iframe {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .col-lg-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media(max-width:768px) {
+
+    input[placeholder="Your password"] {
+        width: 100%;
+    }
+
+    input[placeholder="Your email"] {
+        width: 100%;
+    }
+
+    .btn1 {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:992px) {
+    label[for="menubar"] {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+
+    label[for="menubar"]>span {
+        width: 100%;
+        height: 5px;
+        background-color: #25DAC5;
+        border-radius: 2px;
+    }
+
+    ul.mobile-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 1;
+        transition: all 200ms linear;
+
+    }
+
+    input[type="checkbox"]:checked+ul {
+        /* background-color: black; */
+        left: 0;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .dropdown a svg path {
+        fill: white;
+    }
+
+}
